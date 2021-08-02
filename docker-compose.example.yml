@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   app:
-    container_name: spotify-playing-feed
+    container_name: spotify-release-feed
     build: .
     environment:
       TZ: Asia/Tokyo
