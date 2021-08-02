@@ -4,6 +4,8 @@ Spotify new releases feed on discord
 
 毎朝4時にSpotifyの新曲リリースを通知してくれます (デフォルト設定)
 
+![スクリーンショット 2021-08-02 18 01 44](https://user-images.githubusercontent.com/46530214/127835441-a62b02d2-2e45-4081-bcef-112ff6957679.png)
+
 ## Installation
 
 ```
