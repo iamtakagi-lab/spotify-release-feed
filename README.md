@@ -1,6 +1,6 @@
 # spotify-release-feed
 
-Spotify New Release feed on discord
+Spotify new releases feed on discord
 
 毎朝4時にSpotifyの新曲リリースを通知してくれます (デフォルト設定)
 
