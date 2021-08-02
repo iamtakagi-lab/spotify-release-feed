@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  app:
+    container_name: spotify-playing-feed
+    build: .
+    environment:
+      TZ: Asia/Tokyo
+      HOST: 0.0.0.0
+      PORT: 3000
+      SPOTIFY_REDIRECT_URI: http://localhost:3000/auth/callback
+      SPOTIFY_CLIENT_ID: xxx
+      SPOTIFY_CLIENT_SECRET: xxx
+      # カンマで区切ると複数追加できます
+      DISCORD_WEBOOK_URLS: https://discord.com/api/webhooks/xxx/xxx
+      # Embed で送信するフィールド
+      SCRAPBOX_LINK: 'true'
+      EMBED_IMAGE: 'true'
+      # 地域を国コードで指定 (複数の場合はカンマで区切る)
+      COUNTRIES: jp
+      # 通知する時間 (デフォルトは午前4時)
+      CRON: 0 4 * * *
+    ports:
+      - 3000:3000
+    volumes:
+      - ./data:/app/data
+    restart: always
