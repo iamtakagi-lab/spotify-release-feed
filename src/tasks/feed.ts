@@ -42,7 +42,8 @@ export default async () => {
       env.DISCORD_WEBOOK_URLS.split(',').map(async (url) => {
         env.COUNTRIES.split(',').map(async (country) => {
           spotify.getNewReleases({
-            country
+            country,
+            limit: 50,
           }).then((res) => {
             res.body.albums.items.map(async (album) => {
               await sendDiscord(url.split('/'), album)
