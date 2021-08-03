@@ -27,7 +27,7 @@ const main = () => {
     console.info(
       `API server listening on ${env.HOST}:${env.PORT}, in ${env.NODE_ENV}`
     )
-    getMe().then(async (me) => {
+    getMe().then((me) => {
       console.log(`Logged-In as ${me.display_name || me.id}`)
       cron.start()
     })
