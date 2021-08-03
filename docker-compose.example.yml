@@ -16,7 +16,7 @@ services:
       SCRAPBOX_LINK: 'true'
       EMBED_IMAGE: 'true'
       # 地域を国コードで指定 (複数の場合はカンマで区切る)
-      COUNTRIES: jp
+      COUNTRIES: JP
       # 通知する時間 (デフォルトは午前4時)
       CRON: 0 4 * * *
     ports:
