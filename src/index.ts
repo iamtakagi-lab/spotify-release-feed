@@ -8,7 +8,6 @@ import env from './env'
 import router from './routes'
 import Store from './store'
 import { getMe } from './auth/me'
-import feed from './tasks/feed'
 import { Cron } from './tasks/cron'
 
 export const store = new Store()
