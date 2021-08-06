@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
 
 env:
-  DOCKER_BASE_NAME: iamtakagi/spotify-playing-feed
+  DOCKER_BASE_NAME: iamtakagi/spotify-release-feed
 
 jobs:
   build:
